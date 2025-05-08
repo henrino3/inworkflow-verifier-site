@@ -7,7 +7,6 @@ import Pricing from './pages/Pricing'
 import CustomerStories from './pages/CustomerStories'
 import Security from './pages/Security'
 import Documentation from './pages/Documentation'
-import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import './style.css'
@@ -25,7 +24,6 @@ function App() {
             <Route path="/customer-stories" element={<CustomerStories />} />
             <Route path="/security" element={<Security />} />
             <Route path="/documentation" element={<Documentation />} />
-            <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
           </Routes>

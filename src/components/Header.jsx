@@ -27,7 +27,6 @@ export default function Header() {
               { to: '/pricing', label: 'Pricing' },
               { to: '/customer-stories', label: 'Customer stories' },
               { to: '/security', label: 'Security' },
-              { to: '/careers', label: 'Careers' },
             ].map(link => (
               <Link
                 key={link.to}
