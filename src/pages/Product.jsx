@@ -8,9 +8,9 @@ export default function Product() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '4rem 0', gap: 48 }}>
           {/* Left: Text */}
           <div style={{ maxWidth: 520 }}>
-            <div style={{ fontWeight: 600, fontSize: 18, opacity: 0.85, marginBottom: 16 }}>AI for Verification</div>
-            <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.1, marginBottom: 24 }}>Your platform determines your team's speed</h1>
-            <p style={{ fontSize: 20, color: 'rgba(255,255,255,0.92)', marginBottom: 36, maxWidth: 480 }}>
+            <div style={{ fontWeight: 600, fontSize: 18, opacity: 0.85, marginBottom: 16, color: 'white' }}>AI for Verification</div>
+            <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.1, marginBottom: 24, color: 'white' }}>Your platform determines your team's speed</h1>
+            <p style={{ fontSize: 20, color: 'white', marginBottom: 36, maxWidth: 480 }}>
               InWorkflow connects your verification workflows to reduce friction, increase quality, and improve compliance.
             </p>
             <div style={{ display: 'flex', gap: 16 }}>
