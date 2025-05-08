@@ -11,7 +11,7 @@ export default function Product() {
             <div style={{ fontWeight: 600, fontSize: 18, opacity: 0.85, marginBottom: 16, color: 'white' }}>AI for Human-in-the-Loop Verification</div>
             <h1 style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.1, marginBottom: 24, color: 'white' }}>The AI platform for reliable, scalable verification workflows</h1>
             <p style={{ fontSize: 20, color: 'white', marginBottom: 36, maxWidth: 480 }}>
-              In Workflow Verifier is a horizontal AI-powered platform that streamlines human-in-the-loop (HITL) verification for industries like insurance, real estate, pharma, and government. It automates data pre-filling, retrieves source documents, and presents context for human review—reducing processing time and improving accuracy, while ensuring compliance and auditability.
+              Automate document review, data pre-filling, and compliance checks—while keeping a human in the loop for near-100% accuracy. Built for insurance, real estate, pharma, and government.
             </p>
             <div style={{ display: 'flex', gap: 16 }}>
               <a href="/get-access" className="btn btn-white" style={{ fontWeight: 700, fontSize: 18 }}>Get access</a>
@@ -27,81 +27,92 @@ export default function Product() {
         </div>
       </section>
 
-      {/* Executive Summary & Problem Statement */}
-      <section style={{ background: 'white', padding: '4rem 0 2rem 0', textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, color: '#1f2937', marginBottom: 16 }}>Executive Summary</h2>
-          <p style={{ fontSize: 20, color: '#4b5563', marginBottom: 32 }}>
-            The In Workflow Verifier is a plug-and-play, API-first platform for HITL verification. It integrates AI agents with configurable workflows to automate data pre-filling, retrieve relevant documents, and present context for human review—enabling near-100% accuracy and rapid processing for enterprise clients.
+      {/* What It Solves */}
+      <section style={{ background: 'white', padding: '3rem 0 2rem 0', textAlign: 'center' }}>
+        <div className="container" style={{ maxWidth: 800, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1d4ed8', marginBottom: 18 }}>What It Solves</h2>
+          <p style={{ fontSize: 20, color: '#374151', marginBottom: 0 }}>
+            Most AI tools can't guarantee accuracy or compliance. InWorkflow Verifier combines AI automation with human review, so you can process claims, mortgages, and regulatory documents faster—without sacrificing trust or auditability.
           </p>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Problem Statement</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700, marginBottom: 32 }}>
-            <li>AI systems rarely deliver 100% accuracy, requiring human intervention for reliability in high-stakes workflows.</li>
-            <li>Manual verification is slow, costly, and hard to scale—especially in regulated industries.</li>
-            <li>Enterprises need auditable, transparent processes to meet compliance standards.</li>
-            <li>Integrating AI into legacy workflows is complex and disruptive.</li>
-          </ul>
         </div>
       </section>
 
-      {/* Solution Overview & Value Proposition */}
+      {/* Key Features */}
       <section style={{ background: '#f9fafb', padding: '3rem 0' }}>
         <div className="container" style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Solution Overview</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700, marginBottom: 32 }}>
-            <li>AI agent extracts and pre-fills data from documents or databases.</li>
-            <li>Contextual document retrieval surfaces relevant snippets and links for human verification.</li>
-            <li>User-friendly interface presents pre-filled fields, source info, and reasoning for quick review.</li>
-            <li>API and agentic workflow integrate with existing systems, supporting both BPO and regulatory use cases.</li>
-            <li>Transparent audit trail ensures compliance and accountability.</li>
-          </ul>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Value Proposition</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700, marginBottom: 32 }}>
-            <li>Reduces verification time by up to 80% (e.g., 3 hours to minutes in mortgage processing).</li>
-            <li>Combines AI automation with human oversight for near-100% accuracy.</li>
-            <li>Scales from low-cost BPOs to high-skill regulatory experts.</li>
-            <li>Provides auditable, compliant workflows for enterprise needs.</li>
-            <li>Plug-and-play API and configurable workflows minimize disruption to existing systems.</li>
-          </ul>
+          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1d4ed8', marginBottom: 24, textAlign: 'center' }}>Key Features</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 32 }}>
+            <div style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: '2rem' }}>
+              <h3 style={{ color: '#2563eb', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>AI Pre-filling</h3>
+              <p style={{ color: '#374151', fontSize: 16 }}>Extracts and pre-fills data from documents or databases, reducing manual entry.</p>
+            </div>
+            <div style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: '2rem' }}>
+              <h3 style={{ color: '#2563eb', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Smart Document Retrieval</h3>
+              <p style={{ color: '#374151', fontSize: 16 }}>Finds and links relevant source snippets for every field, so reviewers see context instantly.</p>
+            </div>
+            <div style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: '2rem' }}>
+              <h3 style={{ color: '#2563eb', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Human-in-the-Loop Review</h3>
+              <p style={{ color: '#374151', fontSize: 16 }}>Easy interface for humans to confirm, edit, or deep-dive into source docs—ensuring reliability.</p>
+            </div>
+            <div style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: '2rem' }}>
+              <h3 style={{ color: '#2563eb', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Audit & Compliance</h3>
+              <p style={{ color: '#374151', fontSize: 16 }}>Tracks every decision and document for full auditability and regulatory compliance.</p>
+            </div>
+            <div style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: '2rem' }}>
+              <h3 style={{ color: '#2563eb', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Configurable Workflows</h3>
+              <p style={{ color: '#374151', fontSize: 16 }}>Adapt the platform to your industry and process—no need to replace your existing systems.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Use Cases */}
+      {/* Industry Use Cases */}
       <section style={{ background: 'white', padding: '3rem 0' }}>
         <div className="container" style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Industry Use Cases</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700, marginBottom: 32 }}>
-            <li><b>Insurance:</b> OCRs and digitizes claim forms, pre-fills fields, and presents source snippets for human QA—reducing claim verification from 5-10 minutes to 1 minute.</li>
-            <li><b>Real Estate:</b> Extracts data from mortgage documents, pre-fills forms, and provides contextual snippets—cutting processing from 3 hours to minutes.</li>
-            <li><b>Pharma:</b> Organizes FDA dossier fields, pre-fills data, and presents relevant snippets to reviewers—accelerating submission and compliance.</li>
-            <li><b>Government/BPO:</b> Integrates with legacy systems, pre-fills forms, and provides audit trails—enabling faster, more accurate document processing.</li>
-          </ul>
+          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1d4ed8', marginBottom: 24, textAlign: 'center' }}>Industry Use Cases</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 24 }}>
+            <div style={{ background: '#f3f4f6', borderRadius: 10, padding: '1.5rem' }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Insurance</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Verify claims in seconds, not days. Instantly match pre-authorizations to submitted claims with AI and human QA.</p>
+            </div>
+            <div style={{ background: '#f3f4f6', borderRadius: 10, padding: '1.5rem' }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Real Estate</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Accelerate mortgage processing by extracting and verifying data from hundreds of documents in minutes.</p>
+            </div>
+            <div style={{ background: '#f3f4f6', borderRadius: 10, padding: '1.5rem' }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Pharma</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Speed up FDA dossier reviews with pre-filled fields and instant access to supporting documents.</p>
+            </div>
+            <div style={{ background: '#f3f4f6', borderRadius: 10, padding: '1.5rem' }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Government & BPO</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Modernize legacy workflows and enable fast, auditable document processing for high-volume teams.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Product Features & Technical Architecture */}
+      {/* How It Works */}
       <section style={{ background: '#f9fafb', padding: '3rem 0' }}>
-        <div className="container" style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Product Features</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700, marginBottom: 32 }}>
-            <li><b>AI Agent for Pre-filling:</b> Extracts data from structured/unstructured documents or databases using OCR, NLP, or RAG.</li>
-            <li><b>AI Agent for Document Retrieval:</b> Identifies relevant documents/snippets and provides links for verification.</li>
-            <li><b>Verification Interface:</b> Displays pre-filled fields, source snippets, and AI reasoning; supports batch verification.</li>
-            <li><b>Configurable Workflows:</b> Customers define field-document mappings; agentic workflows adapt to industry needs.</li>
-            <li><b>API Integration:</b> RESTful API delivers pre-filled data, snippets, and prompts to existing systems.</li>
-            <li><b>Audit Trail:</b> Logs all verification decisions, sources, and reasoning for compliance.</li>
-            <li><b>Scalable Architecture:</b> Cloud-based, supports both low-cost and high-skill verifiers, handles high-volume workflows.</li>
-          </ul>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: '#1d4ed8', marginBottom: 12 }}>Technical Architecture</h2>
-          <ul style={{ textAlign: 'left', color: '#4b5563', fontSize: 18, margin: '0 auto', maxWidth: 700 }}>
-            <li><b>Frontend:</b> React-based UI for responsive, clickable verification.</li>
-            <li><b>Backend:</b> Node.js or Python server for API, agent coordination, and workflow management.</li>
-            <li><b>AI Agents:</b> OCR (Tesseract), NLP (BERT), RAG for data extraction and document retrieval.</li>
-            <li><b>Storage:</b> S3-compatible buckets for documents, with metadata indexing.</li>
-            <li><b>API:</b> RESTful, delivers JSON payloads with pre-filled data and prompts.</li>
-            <li><b>Database:</b> PostgreSQL for workflow configs and audit logs.</li>
-            <li><b>Deployment:</b> Cloud-native (AWS/GCP), Kubernetes for scalability.</li>
-          </ul>
+        <div className="container" style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1d4ed8', marginBottom: 24 }}>How It Works</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 32 }}>
+            <div style={{ minWidth: 220, flex: 1 }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>AI + Human Review</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>AI pre-fills and retrieves data; humans confirm or edit for reliability.</p>
+            </div>
+            <div style={{ minWidth: 220, flex: 1 }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>API-First Integration</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Plug into your existing systems with a simple, secure API.</p>
+            </div>
+            <div style={{ minWidth: 220, flex: 1 }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Audit & Compliance</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Every action is logged for full transparency and regulatory peace of mind.</p>
+            </div>
+            <div style={{ minWidth: 220, flex: 1 }}>
+              <h4 style={{ color: '#2563eb', fontWeight: 700, fontSize: 17, marginBottom: 6 }}>Cloud-Native Scale</h4>
+              <p style={{ color: '#374151', fontSize: 15 }}>Built for high-volume, low-latency workflows—no matter your industry.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
