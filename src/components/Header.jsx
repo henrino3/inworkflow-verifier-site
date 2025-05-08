@@ -5,10 +5,10 @@ export default function Header() {
   const location = useLocation();
   return (
     <header style={{ background: '#2563eb', color: 'white', boxShadow: '0 1px 3px rgba(0,0,0,0.08)', borderBottom: '1px solid #2563eb', position: 'sticky', top: 0, zIndex: 100 }}>
-      <div className="container" style={{ display: 'flex', alignItems: 'center', height: 72, padding: 0 }}>
+      <div className="container" style={{ display: 'flex', alignItems: 'center', height: 72, padding: 0, overflow: 'hidden' }}>
         {/* Left: Logo + Divider + Nav */}
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Link to="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 800, fontSize: 26, color: 'white', textDecoration: 'none', letterSpacing: '-1px', marginRight: 24 }}>
+        <div style={{ display: 'flex', alignItems: 'center', minWidth: 0, flexShrink: 1 }}>
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 800, fontSize: 26, color: 'white', textDecoration: 'none', letterSpacing: '-1px', marginRight: 24, whiteSpace: 'nowrap' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', marginRight: 10 }}>
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <circle cx="16" cy="16" r="14" fill="white" />
@@ -20,14 +20,13 @@ export default function Header() {
           {/* Divider */}
           <div style={{ width: 1, height: 32, background: 'rgba(255,255,255,0.18)', margin: '0 24px' }} />
           {/* Nav */}
-          <nav style={{ display: 'flex', gap: 32, fontFamily: 'Open Sans, sans-serif', fontWeight: 400, fontSize: 15 }}>
+          <nav style={{ display: 'flex', gap: 20, fontFamily: 'Open Sans, sans-serif', fontWeight: 400, fontSize: 15, whiteSpace: 'nowrap', minWidth: 0, flexShrink: 1 }}>
             {[
               { to: '/product', label: 'Product' },
               { to: '/blog', label: 'Blog' },
               { to: '/pricing', label: 'Pricing' },
               { to: '/customer-stories', label: 'Customer stories' },
               { to: '/security', label: 'Security' },
-              { to: '/documentation', label: 'Documentation' },
               { to: '/careers', label: 'Careers' },
             ].map(link => (
               <Link
@@ -46,6 +45,7 @@ export default function Header() {
                   transition: 'background 0.15s, color 0.15s',
                   outline: 'none',
                   position: 'relative',
+                  whiteSpace: 'nowrap',
                 }}
                 onMouseOver={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
                 onMouseOut={e => (e.currentTarget.style.background = 'transparent')}
@@ -56,9 +56,9 @@ export default function Header() {
           </nav>
         </div>
         {/* Right: Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginLeft: 'auto' }}>
-          <Link to="/login" style={{ color: 'white', textDecoration: 'none', fontFamily: 'Open Sans, sans-serif', fontWeight: 400, fontSize: 15, marginRight: 8 }}>Log In</Link>
-          <Link to="/get-access" style={{ background: 'white', color: '#2563eb', fontWeight: 700, fontSize: 15, borderRadius: 10, padding: '10px 28px', boxShadow: '0 1px 6px rgba(0,0,0,0.08)', textDecoration: 'none', fontFamily: 'Open Sans, sans-serif', border: 'none', outline: 'none', transition: 'box-shadow 0.15s, background 0.15s' }}>Get access</Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginLeft: 'auto', whiteSpace: 'nowrap' }}>
+          <Link to="/login" style={{ color: 'white', textDecoration: 'none', fontFamily: 'Open Sans, sans-serif', fontWeight: 400, fontSize: 15, marginRight: 8, whiteSpace: 'nowrap' }}>Log In</Link>
+          <Link to="/get-access" style={{ background: 'white', color: '#2563eb', fontWeight: 700, fontSize: 15, borderRadius: 10, padding: '10px 28px', boxShadow: '0 1px 6px rgba(0,0,0,0.08)', textDecoration: 'none', fontFamily: 'Open Sans, sans-serif', border: 'none', outline: 'none', transition: 'box-shadow 0.15s, background 0.15s', whiteSpace: 'nowrap' }}>Get access</Link>
         </div>
       </div>
     </header>
