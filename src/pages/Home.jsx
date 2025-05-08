@@ -5,21 +5,61 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero">
-        <h1>The AI platform for winning verification workflows</h1>
-        <p>
-          Produce high-quality verifications, run capture, organize your data, and a whole lot more. All in one place.
-        </p>
-        <form style={{ display: 'flex', justifyContent: 'center', gap: 16, marginBottom: 32 }}>
-          <input type="email" placeholder="Enter your email" style={{ padding: '0.75rem 1rem', borderRadius: 6, border: '1px solid #e5e7eb', fontSize: 16 }} />
-          <Link to="/get-access" className="btn btn-primary">See InWorkflow</Link>
-        </form>
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 32 }}>
-          <div style={{ background: '#fff', borderRadius: 16, boxShadow: '0 4px 24px rgba(0,0,0,0.08)', width: 480, height: 270, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ width: 80, height: 80, background: '#1d4ed8', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                <path d="M8 5V19L19 12L8 5Z" fill="white"/>
-              </svg>
+      <section style={{
+        minHeight: '600px',
+        background: 'linear-gradient(180deg, #2563eb 0%, #3b82f6 40%, #f9fafb 100%)',
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        padding: '0',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '64px 0', minHeight: 500 }}>
+          {/* Left: Text */}
+          <div style={{ maxWidth: 540, zIndex: 2 }}>
+            <div style={{ fontWeight: 600, fontSize: 18, opacity: 0.85, marginBottom: 16 }}>AI for Verification</div>
+            <h1 style={{ fontSize: 48, fontWeight: 800, lineHeight: 1.1, marginBottom: 24, color: 'white' }}>
+              The AI platform for winning verification workflows
+            </h1>
+            <p style={{ fontSize: 20, color: 'rgba(255,255,255,0.92)', marginBottom: 36, maxWidth: 480 }}>
+              Produce high-quality verifications, run capture, organize your data, and a whole lot more. All in one place.
+            </p>
+            <form style={{ display: 'flex', gap: 0, alignItems: 'center', marginBottom: 40 }}>
+              <input type="email" placeholder="Enter your email" style={{
+                padding: '18px 20px',
+                borderRadius: '8px 0 0 8px',
+                border: 'none',
+                fontSize: 18,
+                outline: 'none',
+                width: 260,
+                background: 'rgba(255,255,255,0.18)',
+                color: '#fff',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+                borderRight: '1px solid #e5e7eb',
+              }} />
+              <button type="submit" style={{
+                background: '#111827',
+                color: 'white',
+                fontWeight: 700,
+                fontSize: 18,
+                border: 'none',
+                borderRadius: '0 8px 8px 0',
+                padding: '18px 32px',
+                cursor: 'pointer',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.08)',
+              }}>See InWorkflow</button>
+            </form>
+          </div>
+          {/* Right: Image placeholder */}
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center', minWidth: 320 }}>
+            <div style={{ width: 480, height: 320, background: 'white', borderRadius: 18, boxShadow: '0 8px 32px rgba(37,99,235,0.10)', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ width: 90, height: 90, background: '#2563eb', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 2px 8px rgba(37,99,235,0.10)' }}>
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="22" fill="none" />
+                  <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
