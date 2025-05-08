@@ -79,20 +79,20 @@ export default function Home() {
       <section className="features">
         <div className="features-grid">
           <div className="feature-card">
-            <h3>Identify Opportunities</h3>
-            <p>Opportunities recommended to you based on your company capabilities.</p>
+            <h3>AI Pre-filling</h3>
+            <p>Extracts and pre-fills data from documents or databases, reducing manual entry and errors.</p>
           </div>
           <div className="feature-card">
-            <h3>Accelerate Capture</h3>
-            <p>Task area identification and comparison against your company capabilities.</p>
+            <h3>Smart Document Retrieval</h3>
+            <p>Finds and links relevant source snippets for every field, so reviewers see context instantly.</p>
           </div>
           <div className="feature-card">
-            <h3>Produce Proposals</h3>
-            <p>Assign reviewers and check capture answers at each gate stage.</p>
+            <h3>Human-in-the-Loop Review</h3>
+            <p>Easy interface for humans to confirm, edit, or deep-dive into source docs—ensuring reliability.</p>
           </div>
           <div className="feature-card">
-            <h3>Manage Contracts</h3>
-            <p>Fully annotated outlines with instructions, task areas, and evaluation criteria.</p>
+            <h3>Audit & Compliance</h3>
+            <p>Tracks every decision and document for full auditability and regulatory compliance.</p>
           </div>
         </div>
       </section>
